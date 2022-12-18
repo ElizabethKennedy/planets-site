@@ -1,0 +1,22 @@
+{
+  "name": "planets-site",
+  "version": "1.0.0",
+  "description": "responsive site with facts about the planets in our solar system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizabethKennedy/planets-site.git"
+  },
+  "keywords": [
+    "frontendmentor"
+  ],
+  "author": "Elizabeth Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElizabethKennedy/planets-site/issues"
+  },
+  "homepage": "https://github.com/ElizabethKennedy/planets-site#readme"
+}
