@@ -12,15 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/ElizabethKennedy/planets-site.git"
   },
-  "keywords": [
-    "frontendmentor"
-  ],
+
   "author": "Elizabeth Kennedy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ElizabethKennedy/planets-site/issues"
   },
-  "homepage": "https://ElizabethKennedy.github.io/planets-site",
+  "homepage": "https://github.com/ElizabethKennedy/planets-site#readme",
   "dependencies": {
     "animejs": "^3.2.1"
   },
