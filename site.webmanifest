@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "planets-site",
+    "short_name": "planets-site",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

@@ -9,7 +9,7 @@ let previousContent = ''
 let currentIndex = 2 // keep track of which planet object in the json file 'planetData' we are accessing
 const changePlanet = document.querySelectorAll('.change-planet') // all elements that change based on the currently selected planet
 const changeContent = document.querySelectorAll('.change-content') // all elements that change based on overview structure or surface
-const planetGeoImg = document.querySelector('.planet-geo-img') // the image that appears when 'surface geology' content is active
+const planetGeoImg = document.querySelector('.planet-geo-img') // image that appears when 'surface geology' content is active
 
 import { planetData } from "./globals.js"
 import { currentPlanet } from "./globals.js"

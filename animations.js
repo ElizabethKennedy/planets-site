@@ -1,4 +1,3 @@
-// animation elements
 const header = document.querySelector(".header");
 const shootingstars = document.querySelector('.shootingstars');
 const background = document.querySelector('.background')
@@ -11,17 +10,17 @@ import { planetImg } from "./globals.js";
 import { standupTextWrapper } from "./globals.js";
 import { statValues } from "./globals.js";
 
-// get current viewport width
+
 function getViewportX() {
     return Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 }
 
-// get current viewport height
+
 function getViewportY() {
     return Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 }
 
-// These create random x,y coords and sizes for the stars and shooting stars
+// Create random x,y coords and sizes for the stars and shooting stars
 const randomRadius = () => {
     return Math.random() * 1.7 + getViewportX() / 1000;
 };
@@ -32,9 +31,7 @@ const getRandomY = () => {
     return Math.floor(Math.random() * Math.floor(window.innerHeight)).toString();
 };
 
-////////////////////////////////
-//  GENERATE BACKGROUND STARS //
-////////////////////////////////
+//generate background stars
 function createCircle(quantity) {
   //<circle class='star' cx="1155.5" cy="369.5" r="3.5"/>
   for(let i = 0; i < quantity; i++) {
@@ -79,9 +76,7 @@ anime({
     delay: (el, i) => 50 * i
 });
 
-////////////////////////////////
-//  GENERATE SHOOTING STARS ////
-////////////////////////////////
+//generate shooting stars
 
 function createWish(quantity) {
     for(let i = 0; i < quantity; i++) {
@@ -115,10 +110,6 @@ anime({
     ],
     translateX: 350,
 });
-
-//////////////////////
-// OTHER ANIMATIONS //
-//////////////////////
 
 // planet title text animation. Thanks to https://tobiasahlin.com/moving-letters/#7
 export function standupLettersAnim(textWrapper, targetClass) {
@@ -213,7 +204,7 @@ export function standupLettersAnim(textWrapper, targetClass) {
         flyInAnimComplete = true
         resetAnim(target)
         flyInAnim(target)
-        planetImg.src=`assets/planet-${currentPlanet.planetName}.svg` // change the planet image
+        planetImg.src=`assets/planet-${currentPlanet.planetName}.svg` // change planet image
         planetImg.classList.remove(previousPlanet.planetName)
         planetImg.classList.add(currentPlanet.planetName)
       }
