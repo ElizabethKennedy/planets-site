@@ -9,6 +9,7 @@ import { previousPlanet } from "./globals.js";
 import { planetImg } from "./globals.js";
 import { standupTextWrapper } from "./globals.js";
 import { statValues } from "./globals.js";
+import anime from './animejs/lib/anime.es.js';
 
 
 function getViewportX() {
